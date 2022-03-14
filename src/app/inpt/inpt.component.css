@@ -1,0 +1,32 @@
+.inpt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: auto; 
+
+}
+
+.mrg {
+    margin: 0;
+}
+
+.cx{
+    margin-left: 10px;
+    height: 55px;
+    font-size: 30px;
+
+}
+
+.adc{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.cordefundo{
+
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 10px;
+}

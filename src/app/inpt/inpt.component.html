@@ -1,0 +1,29 @@
+<mat-card-content class="inpt">
+
+  <mat-form-field class="mrg" appearance="outline">
+    <mat-label></mat-label>
+    <input matInput placeholder="Adicione uma atividade" #inputTarefa (keyup.enter)="add(inputTarefa.value)">
+  </mat-form-field>
+
+  <button class="cx" mat-raised-button color="primary" (click)="add(inputTarefa.value)">+</button>
+
+</mat-card-content>
+
+<mat-list class="adc">
+
+  <mat-list-item class="cordefundo" *ngFor="let tarefa of tarefas; let variavelQualquer = index">
+    {{ (variavelQualquer + 1) + 'º' }}
+    {{ tarefa }}
+  </mat-list-item>
+
+</mat-list>
+
+
+
+<p></p>
+
+<button>Clear All</button>
+
+
+
+

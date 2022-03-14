@@ -1,0 +1,12 @@
+.tcard{
+    min-height: 250px;
+    min-width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px ;
+
+}
