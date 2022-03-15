@@ -3,16 +3,18 @@
     flex-direction: row;
     justify-content: space-between;
     justify-items: auto; 
+    margin-bottom: 0;
 
 }
 
 .mrg {
-    margin: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .cx{
     margin-left: 10px;
-    height: 55px;
+    height: 53px;
     font-size: 30px;
 
 }
@@ -25,8 +27,33 @@
     align-items: center; 
 }
 
-.cordefundo{
+.trf{
 
     background-color: rgb(240, 240, 240);
     margin-bottom: 10px;
+    justify-content: left;
+}
+
+.trf span{
+
+    width: 100%;
+}
+
+.fade
+{
+        opacity:0.3;
+}
+.fade:hover
+{
+        opacity:2;
+}
+
+
+.ftr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: auto; 
+    margin-bottom: 10px;
+
 }

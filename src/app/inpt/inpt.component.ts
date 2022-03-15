@@ -8,6 +8,8 @@ import { Component, ViewChild, ElementRef  } from '@angular/core';
 export class InptComponent  {
 
   tarefas: Array<string> = []
+  incremento: number = 0
+  excluir: boolean = true
 
   @ViewChild('inputTarefa')
   ipt!: ElementRef
@@ -16,5 +18,20 @@ export class InptComponent  {
     this.tarefas.push(valor)
     this.ipt.nativeElement.value = ''
   }
+
+  incr(event:any):number {
+    this.incremento ++
+
+    return this.incremento
+  }
   
+ 
+  remover(z: string):void{
+  this.tarefas.splice(this.tarefas.indexOf(z),1)
+}
+
+  removerall(): void {
+  this.tarefas.length = 0
+}
+
 }
