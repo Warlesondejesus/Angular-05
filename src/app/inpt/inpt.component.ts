@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef,EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-inpt',
@@ -45,5 +45,12 @@ export class InptComponent {
     let arr = JSON.parse(storage || '[]')
     this.tarefas = arr
 
+  }
+
+  @Output()
+  btnClickEvent: EventEmitter<any> = new EventEmitter<any>()
+
+  emitiEvent():void {
+    this.btnClickEvent.emit()
   }
 }

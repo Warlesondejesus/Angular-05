@@ -28,7 +28,7 @@
 
 <p >Você tem {{tarefas.length}} tarefas pendentes!</p>
 
-<button  (click)="removerall()" btn>Clear All</button> <!-- estilizar esse botaão com diretivas -->
+<button mat-button color="warn" (click)="removerall(); emitiEvent()" >Clear All</button> 
 
 </mat-card-footer>
 
