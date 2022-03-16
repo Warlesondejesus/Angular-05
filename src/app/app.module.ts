@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardComponent } from './card/card.component';
 import { InptComponent } from './inpt/inpt.component';
+import { StyleBtnDirective } from './style-btn.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    InptComponent
+    InptComponent,
+    StyleBtnDirective
   ],
   imports: [
     BrowserModule,

@@ -25,6 +25,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center; 
+    
+    /* barra de rolagem */
+    overflow-y: scroll;
+    max-height: 250px; 
 }
 
 .trf{
@@ -32,6 +36,7 @@
     background-color: rgb(240, 240, 240);
     margin-bottom: 10px;
     justify-content: left;
+    
 }
 
 .trf span{
@@ -45,7 +50,7 @@
 }
 .fade:hover
 {
-        opacity:2;
+        opacity:5;
 }
 
 

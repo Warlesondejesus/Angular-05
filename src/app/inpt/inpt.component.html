@@ -11,11 +11,15 @@
 
 <mat-list class="adc">
 
-  <mat-list-item class="trf" *ngFor="let tarefa of tarefas; let indexOfelement = index">
+  <mat-list-item class="trf" 
+  *ngFor="let tarefa of tarefas; let indexOfelement = index"
+  
+  >
      <span>
       {{ tarefa }}
      </span> 
-    <button class="fade" mat-icon-button color="warn" (click)="remover(tarefa)"><mat-icon>delete</mat-icon></button>
+    <button appStyleBtn class="fade" mat-icon-button color="warn" 
+    (click)="remover(tarefa)"><mat-icon>delete</mat-icon></button> <!-- estilizar ou incrementar esse botaão com diretivas -->
   </mat-list-item>
 
 </mat-list>
@@ -24,9 +28,9 @@
 
 <p >Você tem {{tarefas.length}} tarefas pendentes!</p>
 
-<button (click)="removerall()">Clear All</button> <!-- estilizar esse botaão com diretivas -->
+<button  (click)="removerall()" btn>Clear All</button> <!-- estilizar esse botaão com diretivas -->
 
 </mat-card-footer>
 
 
-<!-- (click)="delete=!delete" -->
+
