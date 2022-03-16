@@ -13,6 +13,7 @@
 }
 
 .cx{
+    margin-bottom: 0;
     margin-left: 10px;
     height: 53px;
     font-size: 30px;
@@ -28,7 +29,7 @@
     
     /* barra de rolagem */
     overflow-y: scroll;
-    max-height: 250px; 
+    max-height: 160px; 
 }
 
 .trf{

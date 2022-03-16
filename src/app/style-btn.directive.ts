@@ -10,7 +10,7 @@ export class StyleBtnDirective {
     private renderer: Renderer2,
     
   ) {
-    this.renderer.addClass(this.el.nativeElement, 'style-btn')
+   
   }
 
   @HostListener('click', ['$event'])
